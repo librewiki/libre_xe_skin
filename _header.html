@@ -1,0 +1,64 @@
+<nav class="navbar navbar-default navbar-fixed-top libre_navbar">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+			</button>
+			<div class="dropdown">
+				<button type="button" class="navbar-toggle collapsed dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				</button>
+				<ul class="dropdown-menu libre_personal_dropdown" role="menu">
+					<li id="pt-userpage"><a href="/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90:Itsurea" title="내 사용자 문서. [alt+shift+u]" accesskey="u">지원않함</a></li>
+					<li><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%95%8C%EB%A6%BC" title="알림 목록을 불러옵니다." class="mw-echo-notifications-badge">알림</a></li>
+					<li id="pt-mytalk"><a href="/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90%ED%86%A0%EB%A1%A0:Itsurea" title="내 토론 문서. [alt+shift+m]" accesskey="m">토론</a></li>
+					<li id="pt-preferences"><a href="/wiki/%ED%8A%B9%EC%88%98:%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95" title="환경설정을 불러옵니다.">환경설정</a></li>
+					<li id="pt-watchlist"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%A3%BC%EC%8B%9C%EB%AC%B8%EC%84%9C%EB%AA%A9%EB%A1%9D" title="주시문서를 불러옵니다. [alt+shift+l]" accesskey="l">주시문서</a></li>
+					<li id="pt-mycontris"><a href="/wiki/%ED%8A%B9%EC%88%98:%EA%B8%B0%EC%97%AC/Itsurea" title="내 기여 목록을 불러옵니다. [alt+shift+y]" accesskey="y">기여</a></li>
+					<li id="pt-logout"><a href="/wiki/%ED%8A%B9%EC%88%98:%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83" title="로그아웃">로그아웃</a></li>
+				</ul>
+			</div>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_search" aria-expanded="false" aria-controls="nav_search">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			</button>
+			<a class="navbar-brand" href="//librewiki.net/wiki/FrontPage"><img alt="리브레 위키" src="//librewiki.net/skins/Libre/logo.png" style="width: auto; height: 36px"/></a>
+		</div>
+
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav libre_navbar_menu">
+				<li loop="$header_menu->list=>$key1,$val1"><a href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'">{$val1['link']}</a>
+					<ul class="dropdown-menu" role="menu" cond="$val1['list']">
+						<li loop="$val1['list']=>$key2,$val2"><a href="{$val2['href']}" target="_blank"|cond="$val2['open_window']=='Y'">{$val2['link']}</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right nav-pills nav-login libre_navbar_menu">
+				<li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-expanded="false">지원안함</a>
+					<ul class="dropdown-menu" role="menu">
+						<li id="pt-userpage"><a href="/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90:Itsurea" title="내 사용자 문서. [alt+shift+u]" accesskey="u">Itsurea</a></li>
+						<li><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%95%8C%EB%A6%BC" title="알림 목록을 불러옵니다." class="mw-echo-notifications-badge">알림</a></li>
+						<li id="pt-mytalk"><a href="/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90%ED%86%A0%EB%A1%A0:Itsurea" title="내 토론 문서. [alt+shift+m]" accesskey="m">토론</a></li>
+						<li id="pt-preferences"><a href="/wiki/%ED%8A%B9%EC%88%98:%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95" title="환경설정을 불러옵니다.">환경설정</a></li>
+						<li id="pt-watchlist"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%A3%BC%EC%8B%9C%EB%AC%B8%EC%84%9C%EB%AA%A9%EB%A1%9D" title="주시문서를 불러옵니다. [alt+shift+l]" accesskey="l">주시문서</a></li>
+						<li id="pt-mycontris"><a href="/wiki/%ED%8A%B9%EC%88%98:%EA%B8%B0%EC%97%AC/Itsurea" title="내 기여 목록을 불러옵니다. [alt+shift+y]" accesskey="y">기여</a></li>
+						<li id="pt-logout"><a href="/wiki/%ED%8A%B9%EC%88%98:%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83" title="로그아웃">로그아웃</a></li>
+					</ul>
+				</li>
+			</ul>
+			<button type="button" class="navbar-toggle navbar-search navbar-right collapsed" data-toggle="collapse" data-target="#nav_search" aria-expanded="false" aria-controls="nav_search">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			</button>
+		</div>
+
+		<div id="nav_search" class="collapse libre_navbar_other">
+			<form class="navbar-form navbar-right" action="/index.php">
+				<input type='hidden' name="title" value="특수:검색"/>
+				<input type="search" name="search" placeholder="검색어" title="리브레 위키 검색 [f]" accesskey="f" id="searchInput" class="form-control"/>
+			</form>
+		</div>
+	</div> 
+</nav>
