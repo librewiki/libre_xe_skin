@@ -1,14 +1,14 @@
-$(document).ready(function($) {
-	$( window ).scroll( function() {
-	        if ( $( this ).scrollTop() > 200 ) {
-        	    $('.top_scroll').fadeIn();
+jQuery(document).ready(function($) {
+	jQuery( window ).scroll( function() {
+	        if ( jQuery( this ).scrollTop() > 200 ) {
+        	    jQuery('.top_scroll').fadeIn();
 	        } else {
-        	    $('.top_scroll').fadeOut();
+        	    jQuery('.top_scroll').fadeOut();
 	        }
  	});
 
-	$('.top_scroll').click( function() {
-		$('html, body').animate({ scrollTop : 0 }, 400);
+	jQuery('.top_scroll').click( function() {
+		jQuery('html, body').animate({ scrollTop : 0 }, 400);
 		return false;
 	});
 
@@ -21,7 +21,7 @@ $(document).ready(function($) {
 
 	if (hash) {
 		console.log($(hash).offset().top);
-		$('html, body').animate({ scrollTop : $(hash).offset().top - 60 }, 400);
+		jQuery('html, body').animate({ scrollTop : $(hash).offset().top - 60 }, 400);
 	}
 });
 
