@@ -9,4 +9,4 @@ common/tpl/common_layout.html에서
 ```<html lang="{$lang_type}" class="darklibre"|cond="$_COOKIE['darklibre']">```
 
 
-이슈는 [리브레 이슈트래커](https://github.com/librewiki/issue/issues/new)로 부탁드립니다.
+이슈는 [리브레 이슈트래커](https://issue.librewiki.net)로 부탁드립니다.
