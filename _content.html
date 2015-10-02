@@ -22,19 +22,21 @@
 					<input type="hidden" name="title" value="특수:검색">
 					<input type="search" name="search" placeholder="검색어" title="리브레 위키 검색 [alt-shift-f]" accesskey="f" id="searchInput" class="form-control" autocomplete="off">
 				</form>
-				<div id="recent-list-div">
-					<div class="libre_recent-title">
-						<h2>최근 바뀜
-							<span class="recent-more">
-								<span class="mw-editsection-bracket">[</span>
-								<a href="//librewiki.net/wiki/특수:최근바뀜" title="최근바뀜문서">more</a>
-								<span class="mw-editsection-bracket">]</span>
-							</span>
-						</h2>
-					</div>
-					<ul id="recent-list">
-						불러오고 있습니다...
+				<div class="libre_recent-title">
+					<ul class="nav nav-tabs" id="libre_recent-tabs">
+						<li><a href="#" id="libre_recent-tab1" class="libre_recent-selected">최근 바뀜</a></li>
+						<li><a href="#" id="libre_recent-tab2">최근 토론</a></li>
 					</ul>
+				</div>
+				<div id = "recent-list-div">
+					<ul id = "recent-list">
+						<li>불러오고 있습니다...</li>
+					</ul>
+						<span class="recent-more">
+							<span class="mw-editsection-bracket">[</span>
+							<a href="/wiki/특수:최근바뀜" title="최근바뀜문서">more</a>
+							<span class="mw-editsection-bracket">]</span>
+						</span>
 				</div>
 				<!-- sidebar ad -->
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
