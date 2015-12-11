@@ -172,7 +172,8 @@ function ShowAjaxRecentList(parent)
 			'xhrFields': {
 				'withCredentials': true
 			},
-			dataType:'json'
+			dataType:'json',
+			timeout: 2000
 
 		}
 			)
