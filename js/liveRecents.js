@@ -250,13 +250,13 @@ jQuery( function ( $ ) {
   $("#libre_recent-tab1").click(function(e){
     $(this).addClass('libre_recent-selected');
     $("#libre_recent-tab2").removeClass('libre_recent-selected');
-    _rcnamespace = "0|4|10|12|14";
+    _rcnamespace = "0|4|10|12|14|1600";
     ShowAjaxRecentList($("#recent-list"));
   });
   $("#libre_recent-tab2").click(function(e){
     $(this).addClass('libre_recent-selected');
     $("#libre_recent-tab1").removeClass('libre_recent-selected');
-    _rcnamespace = "1|3|5|7|9|11|13|15|2600";
+    _rcnamespace = "1|3|5|7|9|11|13|15|2600|1601";
     ShowAjaxRecentList($("#recent-list"));
   });
 } );
